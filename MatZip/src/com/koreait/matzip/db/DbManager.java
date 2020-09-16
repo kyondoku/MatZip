@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class DbManager {
 	
 	public static Connection getCon() throws Exception {
-		String url = "jdbc:mysql://127.0.0.1:3306/matzip";
+		String url = "jdbc:mysql://127.0.0.1:3306/matzip?useUnicode=true&characterEncoding=UTF-8";
 		String user = "root";
 		String pw = "koreait2020";
 		String className = "com.mysql.cj.jdbc.Driver";

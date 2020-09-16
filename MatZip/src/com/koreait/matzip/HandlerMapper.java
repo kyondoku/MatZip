@@ -42,6 +42,20 @@ public class HandlerMapper {
 			switch(uriArr[2]) {
 			case "restMap" :
 				return restCon.restMap(request);
+			case "restReg" :
+				return restCon.restReg(request);
+			case "ajaxGetList" :
+				return restCon.ajaxGetList(request);
+			case "restRegProc" :
+				return restCon.restRegProc(request);
+			case "restDetail" :
+				return restCon.restDetail(request);
+			case "addMenusProc":
+				return restCon.addMenusProc(request);
+			case "addRecMenusProc":
+				return restCon.addRecMenusProc(request);
+			case "ajaxDelRecMenu" :
+				return restCon.ajaxDelRecMenu(request);
 			}
 		} 
 		
